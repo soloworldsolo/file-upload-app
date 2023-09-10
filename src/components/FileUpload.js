@@ -27,8 +27,10 @@ const FileUpload = () => {
   };
 
   return (
-    <div className="container mt-5 " >
-    <Form >
+    <div className="container mt-5 d-flex justify-content-center align-items-center">
+      <div className='row'>
+        <div className='col-8'>
+        <Form >
         <Form.Group>
           <Form.Control
             type='file'
@@ -39,10 +41,14 @@ const FileUpload = () => {
             
           />
         </Form.Group>
+        </Form>
+        </div>
+        <div className='col-4'>
         <Button  onClick={handleFileUpload} variant='primary' className='mt-1'>
           Upload
         </Button>
-      </Form>
+        </div>
+        </div>
     </div>
     
   );
